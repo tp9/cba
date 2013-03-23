@@ -1,0 +1,68 @@
+Game Class
+void play()
+
+
+Player Class
+Player(String name)
+String getName()
+void addHitpoints(int hp)
+int getMaxHitpoints()
+void setMaxHitpoints(int maxHitpoints)
+int getHitpoints()
+void setLevel(int lvl)
+int getLevel()
+void setDamage(int min, int max)
+int getMinDmg()
+int getMaxDmg()
+Item[] getInventory()
+boolean isInventoryFull()
+boolean itemIn(Item item)
+Item itemOut(String itemName)
+
+
+Parser Class
+Parser()
+Command getCommand()
+void showCommands()
+
+
+CommandWords Class
+boolean isCommand(String aString)
+void showAll()
+
+
+Command Class
+Command(String firstWord, String secondWord, boolean knownWord)
+STring getCommandWord()
+String getSecondWord()
+boolean isUnknown()
+boolean hasSecondWord()
+
+
+Monster Class
+Monster(String monsterName, int monsterHP, int minDamage, int maxDamage)
+String getName()
+void addHitpoints(int addHP)
+int getHP()
+int getMinDmg()
+int getMaxDmg()
+
+
+Room Class
+Room(String description)
+void setExits(Room north, Room east, Room south, Room west)
+String shortDescription()
+String longDescription()
+Room nextRoom(String direction)
+Item getItem()
+void addItem(Item item)
+void deleteItem()
+Monster getMonster()
+void addMonster(Monster monster)
+void deleteMonster()
+
+
+Item Class
+Item(String name, String description)
+String getDescription()
+String getName()
